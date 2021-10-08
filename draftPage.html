@@ -20,6 +20,9 @@ h1 {text-align: center;}
   display: inline-block;
   font-size: 12px;
 }
+.button:hover{
+  background-color: rgb(160, 158, 158);
+}
 input {
   display:block;
   width:100%;
@@ -90,9 +93,9 @@ table.center {
 <div class="header">
   <b>NHL Draft Grader</b>
   <div class="header-right">
-    <a href="http://127.0.0.1:5500/homePage.html">Home</a>
-    <a href="http://127.0.0.1:5500/logInPrompt.html">Log In</a>
-    <a href="http://127.0.0.1:5500/createAccount.html">New User</a>
+    <form>
+      <input class="button" type="button" value="return" onclick="history.back()">
+    </form>
   </div>
 </div>
 <h1><b>Submit Your Team!</b></h1>
@@ -215,6 +218,7 @@ table.center {
 <a href="http://127.0.0.1:5500/draftGrade.html">
   <button class="button">Click to Submit a Team!</button>
 </a>
+
 
 </div>
 
