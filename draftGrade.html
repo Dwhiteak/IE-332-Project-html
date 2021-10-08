@@ -30,16 +30,20 @@ table {
   width: 100%;
 }
 
-td, th {
+td {
   border: 1px solid #dddddd;
   text-align: left;
   padding: 8px;
 }
 
-tr:nth-child(odd) {
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
   background-color: #dddddd;
 }
-tr:nth-child(even) {
+
+tr {
   background-color: #FFF;
 }
 table.center {
@@ -101,115 +105,168 @@ table.center {
 <table class="center" style="width:50%">
 <tr>
     <th>Choice</th>
-    <th rowspan="2">Player Name</th>
+    <th>Player Name</th>
     <th>Score</th>
     <th>Choice</th>
-    <th rowspan="2">Player Name</th>
+    <th>Player Name</th>
     <th>Score</th>
 </tr>
   
 <tr>
-<td>1.</td>
-<td class=""><input type="text" ng-model="">
-  <td>1</td>
-  <td>2</td>
-</td>
-<td class=""><input type="text" ng-model=""></td>
-<td>12.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
+  <td rowspan="2">1.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">12.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
 </tr>
 
-<tr>
-<td>2.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-<td>13.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-</tr>
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
 
 <tr>
-<td>3.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-<td>14.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
+  <td rowspan="2">2.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">13.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
 </tr>
 
-<tr>
-<td>4.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-<td>15.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-</tr>
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
 
 <tr>
-<td>5.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-<td>16.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
+  <td rowspan="2">3.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">14.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
 </tr>
 
-<tr>
-<td>6.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-<td>17.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-</tr>
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
 
 <tr>
-<td>7.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-<td>18.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
+  <td rowspan="2">4.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">15.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
 </tr>
 
-<tr>
-<td>8.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-<td>19.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-</tr>
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
 
 <tr>
-<td>9.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-<td>20.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
+  <td rowspan="2">5.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">16.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
 </tr>
 
-<tr>
-<td>10.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-<td>21.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-</tr>
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
 
 <tr>
-<td>11.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
-<td>22.</td>
-<td class=""><input type="text" ng-model=""></td>
-<td class=""><input type="text" ng-model=""></td>
+  <td rowspan="2">6.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">17.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
 </tr>
-    </table>
+
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
+
+<tr>
+  <td rowspan="2">7.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">18.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
+</tr>
+
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
+
+<tr>
+  <td rowspan="2">8.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">19.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
+</tr>
+
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
+
+<tr>
+  <td rowspan="2">9.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">20.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
+</tr>
+
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
+
+<tr>
+  <td rowspan="2">10.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">21.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
+</tr>
+
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
+
+<tr>
+  <td rowspan="2">11.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">3</td>
+  <td rowspan="2">22.</td>
+  <td>Wayne Gretzki</td>
+  <td rowspan="2">-2</td>
+</tr>
+
+<tr> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>10 - 14 - 14</td> 
+  <td>&nbsp;G -&nbsp; A &nbsp;- H<br>6 - 13 - 11</td> 
+</tr> 
+
+</table>
 <br>
 
 
