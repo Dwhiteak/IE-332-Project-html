@@ -18,5 +18,18 @@ if(!$conn) {
 }
 
 echo "Connected successfully";
+echo "AAA";
+
+$sql = "SELECT * FROM skaters_table";
+$result = mysqli_query($conn,$sql);
+
+echo "Before WHile";
+
+while($row = mysqli_fetch_assoc($result)){
+    echo "Player".$row["Player"]."<br>";
+}
+
+echo "After While";
+
 mysqli_close($conn);
 ?>
