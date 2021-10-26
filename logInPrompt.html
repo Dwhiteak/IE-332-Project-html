@@ -15,12 +15,26 @@
 <h1><b>Welcome Back, please log in below!</b></h1>
 
 <div class = "center">
-<form action="/postData.php" method="post">
-<b>Email:</b><br>
-<input type="text" placeholder="Enter Username" name="email" required><br>
+<form action="dataBaseConnect.php" method="post">
+
+<div class = "center">
+  <label for="email">Email:</label>
+  <input type="text" placeholder="Enter Username" id="email" name="email" required><br>
+</div>
+
+<div class = "center">
+  <label for="pass">Password:</label>
+  <input type="text" placeholder="Enter Password" id="pass" name="pass" required><br>
+</div>
+
+<input type="submit" class="btn btn-primary" />
+
+<!-- <b>Email:</b><br>
+<input type="text" placeholder="Enter Username" id="email" name="email" required><br>
 <b>Password:</b><br>
-<input type="text" placeholder="Enter Password" name="pass" required><br><br>
-<button class="button" type="submit">Log In</button>
+<button class="button" type="submit">Log In</button> -->
+</form>
+
 <br><br>
 <a href="loginHome.html" class="button">
   Your Home (temp)
@@ -31,6 +45,6 @@
 </a>
 </div>
 
-</form>
+
 </body>
 </html>

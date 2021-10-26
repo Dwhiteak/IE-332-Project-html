@@ -18,18 +18,31 @@ if(!$conn) {
 }
 
 echo "Connected successfully";
-echo "AAA";
+echo "AAAA";
 
-$sql = "SELECT * FROM skaters_table";
-$result = mysqli_query($conn,$sql);
+$email = $_POST['email'];
+$pass = $_POST['pass'];
 
-echo "Before WHile";
+$stmt = $conn->prepare("INSERT INTO login (email, pass)
+VALUES(?, ?)");
+echo "prepare";
+$stmt->bind_param("ss", $email, $pass);
+echo "bind";
+$stmt->execute();
+echo "execute";
+echo "successfull";
+
+
+/* $result = mysqli_query($conn,$sql); */
+
+/* echo "Before WHile";
 
 while($row = mysqli_fetch_assoc($result)){
     echo "Player".$row["Player"]."<br>";
 }
 
-echo "After While";
-
-mysqli_close($conn);
+echo "After While"; */
+$stmt->close();
+$conn->close();
+//mysqli_close($conn);
 ?>
